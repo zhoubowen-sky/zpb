@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package bp;
+enum Eb {
+    Success = 0;
+    Failed = 1;
+    Unknown = 2;
+}
+
+message SbReq {
+    string query = 1;
+    int32 page_num = 2;
+}
+
+message SbRsp {
+    int32 status = 1;
+    Eb eb = 2;
+}
+
+service Sa {
+    rpc Get(SbReq) returns (SbRsp);
+}
