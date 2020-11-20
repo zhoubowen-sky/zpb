@@ -8,7 +8,7 @@ import "co.proto";
 message SaReq {
     string query = 1;
     int32 page_num = 2;
-    zpb.co.Cm cccc = 3;
+    co.Cm cccc = 3;
 }
 
 message SaRsp {
