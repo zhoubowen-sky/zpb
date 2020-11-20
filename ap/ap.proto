@@ -1,10 +1,14 @@
 syntax = "proto3";
 
-package ap;
+package zpb.ap;
+option go_package = "github.com/zhoubowen-sky/zpb/ap";
+
+import "co.proto";
 
 message SaReq {
     string query = 1;
     int32 page_num = 2;
+    zpb.co.Cm cccc = 3;
 }
 
 message SaRsp {
