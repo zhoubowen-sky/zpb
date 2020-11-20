@@ -11,6 +11,6 @@ message SaRsp {
     int32 status = 1;
 }
 
-service Sa {
+service ServiceSaa {
     rpc Get(SaReq) returns (SaRsp);
 }
