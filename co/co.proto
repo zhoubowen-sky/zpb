@@ -6,3 +6,7 @@ option go_package = "github.com/zhoubowen-sky/zpb/co";
 message Cm {
   string a = 1;
 }
+
+message Pia {
+  int32 p = 1;
+}

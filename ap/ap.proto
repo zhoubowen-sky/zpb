@@ -13,6 +13,7 @@ message SaReq {
 
 message SaRsp {
     int32 status = 1;
+    co.Pia pia = 2;
 }
 
 service ServiceSaa {
